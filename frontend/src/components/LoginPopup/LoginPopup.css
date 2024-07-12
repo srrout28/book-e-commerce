@@ -1,0 +1,101 @@
+.login-popup {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.7);
+    display: grid;
+
+}
+/* Login CSS */
+.login-popup-container {
+    place-self: center;
+    width: max(30vw, 330px);
+    height: max(35vw, 450px);
+    color: rgb(121, 121, 121);
+    background-color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    position: relative;
+}
+
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+}
+
+.login-popup-title img {
+    width: 16px;
+    cursor: pointer;
+}
+
+.login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-popup-inputs input {
+    outline: none;
+    border: 2px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.login-popup-container button {
+    border: none;
+    padding: 10px;
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 99, 71);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-popup-condition {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-popup-condition input {
+    margin-top: 5px;
+
+}
+
+.login-popup p span {
+    color: rgb(255, 99, 71);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.or-google-login {
+    text-align: center;
+}
+
+.google-login {
+    width: 80%;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    transition: 0.5s;
+}
+.google-login:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width:750px) {
+    .login-popup {
+        height: 100%;
+    }
+
+}
